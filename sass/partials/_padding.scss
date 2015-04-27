@@ -1,0 +1,16 @@
+// Styles to set left and right padding.
+
+$padding: 30px;
+
+.padding {
+	padding-left: $padding;
+	padding-right: $padding;
+}
+
+.padding-left {
+	padding-left: $padding;
+}
+
+.padding-right {
+	padding-right: $padding;
+}

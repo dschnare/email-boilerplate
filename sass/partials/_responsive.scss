@@ -1,0 +1,182 @@
+// Styles that apply for mobile devices.
+
+@media screen and (max-width: 480px) {
+	// Grid layout
+
+	.row {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+
+	$m-col-padding: 2%;
+
+	.col {
+		width: 100% !important;
+
+		> tbody > tr > td {
+			padding-left: $m-col-padding !important;
+			padding-right: $m-col-padding !important;
+		}
+	}
+
+	// Width
+
+	.m-quarter-width {
+		width: 25% !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.m-half-width {
+		width: 50% !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.m-three-quarter-width {
+		width: 75% !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.m-80-percent-width {
+		width: 80% !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.m-full-width {
+		width: 100% !important;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	// Padding
+
+	.m-no-padding {
+		padding: 0 !important;
+	}
+
+	.m-no-top-padding {
+		padding-top: 0 !important;
+	}
+
+	.m-no-right-padding {
+		padding-right: 0 !important;
+	}
+
+	.m-no-bottom-padding {
+		padding-bottom: 0 !important;
+	}
+
+	.m-no-left-padding {
+		padding-left: 0 !important;
+	}
+
+	// Alignment
+
+	.m-left {
+		text-align: left !important;
+	}
+
+	.m-center {
+		text-align: center !important;
+	}
+
+	.m-right {
+		text-align: right !important;
+	}
+
+	.m-top {
+		vertical-align: top !important;
+	}
+
+	.m-middle {
+		vertical-align: middle !important;
+	}
+
+	.m-bottom {
+		vertical-align: bottom !important;
+	}
+
+	// Padding
+
+	$m-padding: $padding;
+
+	.m-padding {
+		padding-left: $m-padding !important;
+		padding-right: $m-padding !important;
+	}
+
+	.m-padding-left {
+	  padding-left: $m-padding !important;
+	}
+
+	.m-padding-right {
+	  padding-right: $m-padding !important;
+	}
+
+	// Baseline
+
+	$m-baseline: $baseline;
+
+	// Padding top.
+
+	.m-topline-quarter {
+	  padding-top: $m-baseline * 0.25 !important;
+	}
+
+	.m-topline-half {
+	  padding-top: $m-baseline * 0.5 !important;
+	}
+
+	.m-topline {
+	  padding-top: $m-baseline !important;
+	}
+
+	.m-topline-1_5x {
+	  padding-top: $m-baseline * 1.5 !important;
+	}
+
+	.m-topline-2x {
+	  padding-top: $m-baseline * 2 !important;
+	}
+
+	.m-topline-2_5x {
+	  padding-top: $m-baseline * 2.5 !important;
+	}
+
+	.m-topline-3x {
+	  padding-top: $m-baseline * 3 !important;
+	}
+
+	// Padding bottom.
+
+	.m-baseline-quarter {
+	  padding-bottom: $m-baseline * 0.25 !important;
+	}
+
+	.m-baseline-half {
+	  padding-bottom: $m-baseline * 0.5 !important;
+	}
+
+	.m-baseline {
+	  padding-bottom: $m-baseline !important;
+	}
+
+	.m-baseline-1_5x {
+	  padding-bottom: $m-baseline * 1.5 !important;
+	}
+
+	.m-baseline-2x {
+	  padding-bottom: $m-baseline * 2 !important;
+	}
+
+	.m-baseline-2_5x {
+	  padding-bottom: $m-baseline * 2.5 !important;
+	}
+
+	.m-baseline-3x {
+	  padding-bottom: $m-baseline * 3 !important;
+	}
+}
