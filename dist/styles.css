@@ -173,8 +173,12 @@ sup {
   .row {
     width: 100% !important;
     padding: 0 !important; }
+    .row td {
+      width: auto !important; }
   .col {
     width: 100% !important; }
+    .col td {
+      width: auto !important; }
     .col > tbody > tr > td {
       padding-left: 2% !important;
       padding-right: 2% !important; }

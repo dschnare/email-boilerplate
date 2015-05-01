@@ -6,12 +6,20 @@
 	.row {
 		width: 100% !important;
 		padding: 0 !important;
+
+		td {
+			width: auto !important;
+		}
 	}
 
 	$m-col-padding: 2%;
 
 	.col {
 		width: 100% !important;
+
+		td {
+			width: auto !important;
+		}
 
 		> tbody > tr > td {
 			padding-left: $m-col-padding !important;
