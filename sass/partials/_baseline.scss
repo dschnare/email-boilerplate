@@ -2,8 +2,6 @@
 
 $baseline: 20px;
 
-// Padding top.
-
 .topline-quarter {
   padding-top: $baseline * 0.25;
 }
@@ -32,8 +30,7 @@ $baseline: 20px;
   padding-top: $baseline * 3;
 }
 
-
-// Padding bottom.
+//--
 
 .baseline-quarter {
   padding-bottom: $baseline * 0.25;

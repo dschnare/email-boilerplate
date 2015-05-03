@@ -1,18 +1,19 @@
 // Styles that apply for mobile devices.
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
 	// Grid layout
 
 	.row {
 		width: 100% !important;
-		padding: 0 !important;
 
 		td {
 			width: auto !important;
 		}
 	}
 
-	@m-col-padding: 2%;
+	.row-wrapper {
+		width: auto !important;
+	}
 
 	.col {
 		width: 100% !important;
@@ -20,13 +21,13 @@
 		td {
 			width: auto !important;
 		}
+	}
 
-		> tbody > tr > td {
-			padding-left: @m-col-padding !important;
-			padding-right: @m-col-padding !important;
-		}
+	.col-wrapper {
+		padding-left: 2% !important;
+		padding-right: 2% !important;
 
-		.col > tbody > tr > td {
+		.col-wrapper {
 			padding: 0 !important;
 		}
 	}
@@ -39,56 +40,34 @@
 
 	// Width
 
-	.m-quarter-width {
+	.m-width-quarter {
 		width: 25% !important;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
 
-	.m-half-width {
+	.m-width-half {
 		width: 50% !important;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
 
-	.m-three-quarter-width {
+	.m-width-three-quarter {
 		width: 75% !important;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
 
-	.m-80-percent-width {
+	.m-width-80-percent {
 		width: 80% !important;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
 
-	.m-full-width {
+	.m-width-full {
 		width: 100% !important;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
-	}
-
-	// Padding
-
-	.m-no-padding {
-		padding: 0 !important;
-	}
-
-	.m-no-top-padding {
-		padding-top: 0 !important;
-	}
-
-	.m-no-right-padding {
-		padding-right: 0 !important;
-	}
-
-	.m-no-bottom-padding {
-		padding-bottom: 0 !important;
-	}
-
-	.m-no-left-padding {
-		padding-left: 0 !important;
 	}
 
 	// Alignment
@@ -119,7 +98,37 @@
 
 	// Padding
 
-	@m-padding: @padding;
+	@m-padding: $padding;
+
+	.m-padding-quarter {
+		padding-left: @m-padding * 0.25 !important;
+		padding-right: @m-padding * 0.25 !important;
+	}
+
+	.m-padding-left-quarter {
+		padding-left: @m-padding * 0.25 !important;
+	}
+
+	.m-padding-right-quarter {
+		padding-right: @m-padding * 0.25 !important;
+	}
+
+	//--
+
+	.m-padding-half {
+		padding-left: @m-padding * 0.5 !important;
+		padding-right: @m-padding * 0.5 !important;
+	}
+
+	.m-padding-left-half {
+		padding-left: @m-padding * 0.5 !important;
+	}
+
+	.m-padding-right-half {
+		padding-right: @m-padding * 0.5 !important;
+	}
+
+	//--
 
 	.m-padding {
 		padding-left: @m-padding !important;
@@ -127,18 +136,76 @@
 	}
 
 	.m-padding-left {
-	  padding-left: @m-padding !important;
+		padding-left: @m-padding !important;
 	}
 
 	.m-padding-right {
-	  padding-right: @m-padding !important;
+		padding-right: @m-padding !important;
+	}
+
+	//--
+
+	.m-padding-1_5x {
+		padding-left: @m-padding * 1.5 !important;
+		padding-right: @m-padding * 1.5 !important;
+	}
+
+	.m-padding-left-1_5x {
+		padding-left: @m-padding * 1.5 !important;
+	}
+
+	.m-padding-right-1_5x {
+		padding-right: @m-padding * 1.5 !important;
+	}
+
+	//--
+
+	.m-padding-2x {
+		padding-left: @m-padding * 2 !important;
+		padding-right: @m-padding * 2 !important;
+	}
+
+	.m-padding-left-2x {
+		padding-left: @m-padding * 2 !important;
+	}
+
+	.m-padding-right-2x {
+		padding-right: @m-padding * 2 !important;
+	}
+
+	//--
+
+	.m-padding-2_5x {
+		padding-left: @m-padding * 2.5 !important;
+		padding-right: @m-padding * 2.5 !important;
+	}
+
+	.m-padding-left-2_5x {
+		padding-left: @m-padding * 2.5 !important;
+	}
+
+	.m-padding-right-2_5x {
+		padding-right: @m-padding * 2.5 !important;
+	}
+
+	//--
+
+	.m-padding-3x {
+		padding-left: @m-padding * 3 !important;
+		padding-right: @m-padding * 3 !important;
+	}
+
+	.m-padding-left-3x {
+		padding-left: @m-padding * 3 !important;
+	}
+
+	.m-padding-right-3x {
+		padding-right: @m-padding * 3 !important;
 	}
 
 	// Baseline
 
-	@m-baseline: @baseline;
-
-	// Padding top.
+	@m-baseline: $baseline;
 
 	.m-topline-quarter {
 	  padding-top: @m-baseline * 0.25 !important;
@@ -168,7 +235,7 @@
 	  padding-top: @m-baseline * 3 !important;
 	}
 
-	// Padding bottom.
+	//--
 
 	.m-baseline-quarter {
 	  padding-bottom: @m-baseline * 0.25 !important;
@@ -196,5 +263,27 @@
 
 	.m-baseline-3x {
 	  padding-bottom: @m-baseline * 3 !important;
+	}
+
+	// Remove Padding
+
+	.m-no-padding {
+		padding: 0 !important;
+	}
+
+	.m-no-padding-top {
+		padding-top: 0 !important;
+	}
+
+	.m-no-padding-right {
+		padding-right: 0 !important;
+	}
+
+	.m-no-padding-bottom {
+		padding-bottom: 0 !important;
+	}
+
+	.m-no-padding-left {
+		padding-left: 0 !important;
 	}
 }
