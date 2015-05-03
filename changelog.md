@@ -28,3 +28,13 @@
 - Add classes row-wrapper and col-wrapper to the wrapping <td> elements in rows and cols respectively.
 - Update all patterns to use the new row-wrapper and col-wrapper classes.
 - Add default topline for all row-wrapper classes.
+
+
+# 0.2.3
+
+*May 3, 2015*
+
+- Rename change-log.md to changelog.md
+- Add classes divider and divider-wrapper to divider pattern.
+- Add clsses media-object-media, media-object-media-wrapper, media-object-content, media-object-content-wrapper to media object pattern.
+- Add styles for media object images so that they are always 100% width.

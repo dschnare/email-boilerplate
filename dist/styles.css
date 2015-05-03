@@ -254,6 +254,9 @@ sup {
   padding-left: 10px;
   vertical-align: top; }
 
+.media-object-media img {
+  width: 100%; }
+
 @media screen and (max-width: 480px), screen and (max-device-width: 480px) {
   .row {
     width: 100% !important; }
