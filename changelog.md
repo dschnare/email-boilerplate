@@ -38,3 +38,10 @@
 - Add classes divider and divider-wrapper to divider pattern.
 - Add clsses media-object-media, media-object-media-wrapper, media-object-content, media-object-content-wrapper to media object pattern.
 - Add styles for media object images so that they are always 100% width.
+
+
+# 0.2.4
+
+*May 3, 2015*
+
+- Update row and col responsive styles so that nested rows and cols are better supported.

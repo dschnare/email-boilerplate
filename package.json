@@ -1,6 +1,6 @@
 {
   "name": "email-boilerplate",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Boilerplate HTML and CSS for implementing HTML emails.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
