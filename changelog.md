@@ -45,3 +45,10 @@
 *May 3, 2015*
 
 - Update row and col responsive styles so that nested rows and cols are better supported.
+
+
+# 0.2.5
+
+*May 3, 2015*
+
+- Update responsive less styles to match SASS styles.
